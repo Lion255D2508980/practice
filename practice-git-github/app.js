@@ -19,7 +19,7 @@ const generateProblem = () => {
             correctAnswer = num1 * num2;
             break
         case "/":
-            correctAnswer = num1 / num2;
+            correctAnswer = (num1 / num2).toFixed(2) ;
             break
 
     }
@@ -55,5 +55,19 @@ const newProble = () => {
 }
 
 //add eventListener to buttons 
-document.getElementById('submit-answer').addEventListener('click', checkAnswer)
-document.getElementById('new-problem').addEventListener('click',newProble)
+document.getElementById('submit-answer').addEventListener('click', ()=>{
+    checkAnswer()
+})
+document.getElementById('new-problem').addEventListener('click',()=>{
+    newProble()
+})
+// Function to generate a random problem
+// Random number between 1 and 10
+// Random number between 1 and 10
+ // Calculate the correct answer based on the operator
+ // Round to 2 decimal places
+ // Display the problem to the user
+ // Store the correct answer for comparison
+ // Function to check if the answer is correct
+ // Function to generate a new problem
+ // Add event listeners to buttons
