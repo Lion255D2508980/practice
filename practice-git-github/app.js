@@ -55,7 +55,9 @@ const newProble = () => {
 }
 
 //add eventListener to buttons 
+
 document.getElementById('submit-answer').addEventListener('click', ()=>{
+document.getElementById('submit-answer').addEventListener('click', ()=> {
     checkAnswer()
 })
 document.getElementById('new-problem').addEventListener('click',()=>{
@@ -71,3 +73,5 @@ document.getElementById('new-problem').addEventListener('click',()=>{
  // Function to check if the answer is correct
  // Function to generate a new problem
  // Add event listeners to buttons
+})
+
